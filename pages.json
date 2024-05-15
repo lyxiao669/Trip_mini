@@ -1,0 +1,150 @@
+
+{
+  "pages": [{
+    "path": "pages/home/home",
+    "style": {
+      "navigationBarTitleText": "主页列表",
+	  "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/login",
+    "style": {
+      "navigationBarTitleText": "登录"
+    }
+  }, {
+    "path": "pages/register",
+    "style": {
+      "navigationBarTitleText": "注册"
+    }
+  }, {
+    "path": "pages/stationDetail/index",
+    "style": {
+      "navigationBarTitleText": "景点详情"
+    }
+  }, {
+    "path": "pages/search/index",
+    "style": {
+      "navigationBarTitleText": "搜索"
+    }
+  }, {
+    "path": "pages/weather/index",
+    "style": {
+      "navigationBarTitleText": "天气"
+    }
+  },
+  {
+    "path": "pages/mine/orders/index",
+    "style": {
+      "navigationBarTitleText": "订单"
+    }
+  }, {
+    "path": "pages/mine/index",
+    "style": {
+      "navigationBarTitleText": "我的"
+    }
+  },  {
+    "path": "pages/feedback/index",
+    "style": {
+      "navigationBarTitleText": "反馈"
+    }
+  }, {
+    "path": "pages/feedback/record/index",
+    "style": {
+      "navigationBarTitleText": "反馈记录"
+    }
+  },   {
+    "path": "pages/favorite/index",
+    "style": {
+      "navigationBarTitleText": "收藏夹"
+    }
+  }, {
+    "path": "pages/mine/avatar/index",
+    "style": {
+      "navigationBarTitleText": "修改头像"
+    }
+  }, {
+    "path": "pages/mine/info/index",
+    "style": {
+      "navigationBarTitleText": "个人信息"
+    }
+  }, {
+    "path": "pages/mine/info/edit",
+    "style": {
+      "navigationBarTitleText": "编辑资料"
+    }
+  }, {
+    "path": "pages/mine/pwd/index",
+    "style": {
+      "navigationBarTitleText": "修改密码"
+    }
+  }, {
+    "path": "pages/mine/setting/index",
+    "style": {
+      "navigationBarTitleText": "应用设置"
+    }
+  }, {
+    "path": "pages/common/webview/index",
+    "style": {
+      "navigationBarTitleText": "浏览网页"
+    }
+  }, {
+    "path": "pages/common/textview/index",
+    "style": {
+      "navigationBarTitleText": "浏览文本"
+    }
+  }],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_.png",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/weather/index",
+        "iconPath": "static/images/tabbar/weather.png",
+        "selectedIconPath": "static/images/tabbar/weather_.png",
+        "text": "天气"
+      }, {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/images/tabbar/mine.png",
+        "selectedIconPath": "static/images/tabbar/mine_.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "RuoYi",
+    "navigationBarBackgroundColor": "#FFFFFF",
+	"usingComponents":{
+	      //按需引入组件
+		  // "van-button": "/wxcomponents/vant/button/index",
+		  "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
+		  "van-search": "/wxcomponents/vant/search/index",
+		  "van-icon": "/wxcomponents/vant/icon/index",
+		  "van-loading": "/wxcomponents/vant/loading/index",
+		  "van-area": "/wxcomponents/vant/area/index",
+		  "van-divider": "/wxcomponents/vant/divider/index",
+		  "van-dialog": "/wxcomponents/vant/dialog/index",
+		  "van-empty": "/wxcomponents/vant/empty/index",
+		  "van-tab": "/wxcomponents/vant/tab/index",
+		"van-tabs": "/wxcomponents/vant/tabs/index",
+		"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+	}
+  },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+
+}
